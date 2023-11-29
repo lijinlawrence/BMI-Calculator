@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+  <div class="rain">
+    <div class="lightining">
+      <div class="container">
+        <div class="card">
+          <div class="content">
+            <div id="calculator">
+              <div class="form">
+                <div>
+                  <h1>Calculate Your BMI</h1>
+                  <label for="height">Height:</label>
+                  <input type="text" id="height" name="height">
+                  <select id="heightUnit">
+                    <option value="meters">Meters</option>
+                    <option value="feet">Feet</option>
+                    <option value="centimeters">Centimeters</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="weight">Weight:</label>
+                  <input type="text" id="weight" name="weight">
+                  <select id="weightUnit">
+                    <option value="kilograms">Kilograms</option>
+                    <option value="pounds">Pounds</option>
+                    <option value="grams">Grams</option>
+                  </select>
+                </div>
+                <button id="calculate">Calculate</button>
+              </div>
+              <div id="result">
+                <p>BMI: <span id="bmi">0</span></p>
+              </div>
+            </div>
+          </div>
+      </div>
+      </div>
+
+    </div>
+    </div>
+
+
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".card"), {
+		max: 25,
+		speed: 400,
+      
+	});
+    </script>
+
+
+      <script src="main.js"></script>
+      
+</body>
+</html>
